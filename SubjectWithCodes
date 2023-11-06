@@ -1,0 +1,15 @@
+package SubjectWithCodes;
+
+public class SubjectWithCodes {
+    public static void main(String[] args) {
+        // Array to store subject and subject codes
+        String[] subjects = {"Purposive Communication", "Calculus", "Computer Fundamentals", "Computer programming", "Understanding The Self", "Euthenics"};
+        String[] subjectCodes = {"GE6106","MATH6100","ITE6101","ITE6102","GE6100","ETHNS6101"};
+        
+       // Display  all subject with their codes. 
+       System.out.println("Subject list with subject codes: ");
+       for (int i = 0; i < subjects.length; i++) {
+           System.out.println(subjects[i] + ": " + subjectCodes[i]);
+       }
+    }
+}
