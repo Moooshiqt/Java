@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Addition {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter Weight in Kilograms: ");
+        double weight = scanner.nextDouble();
+
+        System.out.print("Enter Height in Meters: ");
+        double height = scanner.nextDouble();
+
+        double bmi = weight / (height * height);
+
+        System.out.println("Your BMI is: " + bmi);
+        
+        scanner.close();
+    }
+}
