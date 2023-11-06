@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Addition {
+    public static void main(String []args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter First Number: ");
+        double num1 = input.nextDouble();
+        
+        System.out.print("Enter Second Number: ");
+        double num2 = input.nextDouble();
+        
+        if (num1 > num2){
+            double difference = num1 - num2;
+            System.out.println("The Difference Between the Two Numbers: " + difference);
+            } else { 
+            System.out.println("The First Number is not Greater Than the Second Number.");  
+        }
+       
+        input.close();
+    }
+}
