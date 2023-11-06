@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class StudentGrade {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Student Name: ");
+        String name = scanner.nextLine();
+        
+        // Ask for the Student Section
+        System.out.print("Enter your Section: ");
+        String section = scanner.nextLine();
+       
+        
+        // Get the student's grade of the specific subject
+        int ITE6102, GE6106, MATH6100, ITE6101,GE6100, ETHNS6101;
+        
+        System.out.print("Enter Purposive Communication GE6106 Grade: ");
+        GE6106 = scanner.nextInt();
+        
+        System.out.print("Enter Computer Programming ITE6102 Grade: ");
+        ITE6102 = scanner.nextInt();
+        
+        System.out.print("Enter Calculus MATH6100 Grade: ");
+        MATH6100 = scanner.nextInt();
+        
+        System.out.print("Enter Computer Fundamentals ITE6101 Grade: ");
+        ITE6101 = scanner.nextInt();
+        
+        System.out.print("Enter Euthenics ETHNS6101 Grade: ");
+        ETHNS6101 = scanner.nextInt();
+        
+        System.out.print("Enter Understanding The Self GE6100 Grade: ");
+        GE6100 = scanner.nextInt();
+        
+        //Add the 6 subjects then divide it by 6
+        int average =(ITE6102 + GE6106 + MATH6100 + ITE6101 + GE6100 + ETHNS6101)/6;
+            System.out.println("Your Average is: " + average);
+        // Check if the grade is less than 80
+        if (average < 80) {
+            System.out.println("You have Failed!");
+        } else {
+            System.out.println("You have Passed!");
+        }
+
+        
+        scanner.close();
+    }
+}
